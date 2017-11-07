@@ -1,4 +1,4 @@
 theme: jekyll-theme-hacker
-show_downloads: true
-title: Space Soup Stellar Crawler
-description: Space Soup Stellar Crawler game hosting
+show_downloads: "true"
+title: "Space Soup Stellar Crawler"
+description: "Space Soup Stellar Crawler game hosting"
