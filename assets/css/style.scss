@@ -13,12 +13,20 @@
   background: url("../images/android.png") 0 0 no-repeat;
 }
 
+.container {
+  max-width: 1024px !important;
+}
+
 #gameContainer {
   margin: 0 auto;
 }
 
+.webgl-content {
+  margin: 0 auto;
+  width: 960px;
+}
+
 .webgl-content * {border: 0; margin: 0 auto; padding: 0}
-//.webgl-content {position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
 
 .webgl-content .logo, .progress {position: absolute; left: 50%; top: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
 .webgl-content .logo {background: url('../TemplateData/progressLogo.Light.png') no-repeat center / contain; width: 154px; height: 130px;}
