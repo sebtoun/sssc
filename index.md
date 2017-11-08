@@ -1,29 +1,16 @@
-## Welcome to GitHub Pages
+## Règles du jeu
 
-You can use the [editor on GitHub](https://github.com/sebtoun/sssc/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+TODO
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+---------------------
 
-### Markdown
+<div id="gameContainer" style="width: 960px; height: 600px"></div>
+<div class="footer">
+    <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+</div>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+---------------------
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Après avoir joué, répondez à un petit [questionnaire](https://docs.google.com/forms/d/e/1FAIpQLSdrg0yLu6JQF4gIbiDN4vODoS3YsHGDhIoeIv_bIgFsZEhIIQ/viewform?usp=sf_link)
+ 
+Merci !
