@@ -1,4 +1,6 @@
-## Règles du jeu
+## Prototype v3
+
+### Règles du jeu
 
 TODO
 
