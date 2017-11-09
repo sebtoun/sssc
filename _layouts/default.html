@@ -63,6 +63,9 @@
 
 <script type="text/javascript">
     loadLeaderBoard();
+    // fix different layout the first time leaderboard is generated:
+    loadLeaderBoard();
+    document.addEventListener("gameover", loadLeaderBoard, false);
 </script>
 </body>
 </html>

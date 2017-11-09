@@ -30,6 +30,9 @@ var loadLeaderBoard = function() {
             var highscores = JSON.parse(r.responseText).highscores;
             if (highscores){
                 var list = document.getElementById('leaderboard').querySelector('ul.leaderboard');
+                while (list.firstChild) {
+                    list.removeChild(list.firstChild);
+                }
                 var fragment = document.createDocumentFragment();
                 highscores.forEach(function (entry) {
                     var item = createScoreListEntry(entry);
