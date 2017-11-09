@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang='{{ site.lang | default: "en-US" }}'>
 <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
@@ -8,6 +8,7 @@
 
     <script src="assets/TemplateData/UnityProgress.js"></script>
     <script src="assets/Build/UnityLoader.js"></script>
+    <script src="assets/javascripts/leaderboard.js"></script>
     <script>
         var gameInstance = UnityLoader.instantiate("gameContainer", "assets/Build/web.json", {onProgress: UnityProgress});
     </script>
@@ -20,7 +21,6 @@
     <div class="container">
         <h1>{{ site.title | default: site.github.repository_name }}</h1>
         <h2>{{ site.description | default: site.github.project_tagline }}</h2>
-
         <section id="downloads">
             {% if site.show_downloads %}
             <a href="{{ site.release_url }}/sssc.zip" class="btn btn-win"><span class="icon"></span>Download Windows Standalone</a>
@@ -34,6 +34,19 @@
 <div class="container">
     <section id="main_content">
         {{ content }}
+
+        <div class="game-area">
+            <div class="webgl-content">
+                <div id="gameContainer" style="width: 960px; height: 600px"></div>
+                <div class="footer">
+                    <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+                </div>
+            </div>
+            <div id="leaderboard">
+                <h4 class="list-heading">leaderboard</h4>
+                <ul class="leaderboard"></ul>
+            </div>
+        </div>
     </section>
 </div>
 
@@ -47,5 +60,9 @@
     ga('send', 'pageview');
 </script>
 {% endif %}
+
+<script type="text/javascript">
+    loadLeaderBoard();
+</script>
 </body>
 </html>
