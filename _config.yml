@@ -2,5 +2,5 @@ theme: jekyll-theme-hacker
 show_downloads: "true"
 title: "Space Soup Stellar Crawler"
 description: "Space Soup Stellar Crawler game hosting"
-release_url: "https://github.com/sebtoun/sssc/releases/download/0.3.1"
+release_url: "https://github.com/ssscgame/sssc-ghpages/releases/download/0.3.1"
 repository: "ssscgame/sssc-ghpages"
